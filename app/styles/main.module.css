@@ -1,0 +1,5 @@
+.main_container {
+    position: relative; /* Asegura que respete el z-index */
+    background: #0c0b1d;/* COLOR SECUNDARIO :#161031 */
+    z-index: 30;
+}

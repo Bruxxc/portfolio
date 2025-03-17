@@ -1,9 +1,9 @@
 "use client"
 
-import { div } from 'framer-motion/client';
 import BallCanvas from './resources/ball';
 import SectionWrapper from "./resources/sectionwrapper";
-
+import styles from "../styles/skills.module.css";
+import { div } from 'framer-motion/client';
 
 
 const skills = [
@@ -47,6 +47,18 @@ const skills = [
       name: "figma",
       icon: "assets/icons/figma.png",
     },
+    {
+      name : "python",
+      icon: "assets/icons/python.png",
+    },
+    {
+      name : "java",
+      icon: "assets/icons/java.png",
+    },
+    {
+      name : "postgre",
+      icon :"assets/icons/postgre.png",
+    }
   ];
   
 
@@ -59,16 +71,20 @@ const Skills = () => {
     
     return (
 
-        <div className="z-30">
-
-            <div className="flex flex-row flex-wrap justify-center gap-10">
-                {skills.map((skill) => (
-                    <div className="w-28 h-28" key={skill.name}>
-                        <BallCanvas icon={skill.icon} />
-                    </div>
-                ))}
-            </div>
+      <div className={styles.skills_main_container}>
+        <h2 className={styles.skills_title}>SKILLS<span className={styles.dot}>.</span></h2>
+        <div className={`${styles.skills_section} rounded-4xl p-8`} >
+          <div className="z-30">
+              <div className="flex flex-row flex-wrap justify-center gap-10">
+                  {skills.map((skill) => (
+                      <div className="w-28 h-28" key={skill.name}>
+                          <BallCanvas icon={skill.icon} />
+                      </div>
+                  ))}
+              </div>
+          </div>
         </div>
+      </div>
     );
 };
 

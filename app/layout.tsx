@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "./components/navbar";
 import Header from "./components/header";
 import Introduction from "./components/introduction";
-import Skills from "./components/skills";
+import CoverParticles from "./components/cover-particles";
 //LAYOUT SE COMPRATE ENTRE LAS PÁGINAS
 
 
@@ -27,16 +27,14 @@ export default function RootLayout({
       <body className={`${urbanist.className}`}>
         
         <Header/>
-        
+          
         <Introduction/>
 
-      
-        <Skills/>
-
-        <Navbar/>
-        
+        <CoverParticles/>
+ 
+       
         {children}
-      
+        
       </body>
     </html>
   );

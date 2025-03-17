@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 const Introduction = () => {
     return (
-        <div className="z-20 grid justify-items-center w-full bg-darkBg/60 h-lvh">
+        <div className="z-20 grid justify-items-center w-full bg-darkBg/60  sm:min-h-lvh">
             <div className="z-20 grid items-center h-full p-6 py-20 md:py-0 md:grid-cols-2">
                 <div className="z-3 grid items-center justify-items-center md:pr-10 w-full">
                     <img src="/assets/img/facha.png" className="z-3 h-4/5 w-fit drop-shadow-[0_-15px_45px_rgba(110,17,176,0.25)] rounded-4xl" alt="foto" />
