@@ -2,4 +2,6 @@
     position: relative; /* Asegura que respete el z-index */
     background: #0c0b1d;/* COLOR SECUNDARIO :#161031 */
     z-index: 30;
+    height: max-content;
+    padding-bottom: 120px;
 }

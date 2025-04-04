@@ -3,8 +3,8 @@
 import BallCanvas from './resources/ball';
 import SectionWrapper from "./resources/sectionwrapper";
 import styles from "../styles/skills.module.css";
-import { div } from 'framer-motion/client';
-
+import { motion } from "framer-motion";
+import { fadeIn, textVariant} from "../utils/motion";
 
 const skills = [
     {
@@ -72,7 +72,11 @@ const Skills = () => {
     return (
 
       <div className={styles.skills_main_container}>
-        <h2 className={styles.skills_title}>SKILLS<span className={styles.dot}>.</span></h2>
+        <motion.div variants={textVariant()}>
+          <h2 className={`${styles.skills_title} pl-2 text-center md:text-left`}>SKILLS<span className={styles.dot}>.</span></h2>
+          <p className="text-gray-500 mt-2 text-xl p-2 text-center md:text-left">Conocimientos y tecnologías que domino</p>
+        </motion.div>
+
         <div className={`${styles.skills_section} rounded-4xl p-8`} >
           <div className="z-30">
               <div className="flex flex-row flex-wrap justify-center gap-10">
@@ -88,4 +92,4 @@ const Skills = () => {
     );
 };
 
-export default SectionWrapper(Skills, "");
+export default SectionWrapper(Skills, "skills");

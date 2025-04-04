@@ -1,5 +1,7 @@
-import Skills from "./components/skills";
 import styles from "./styles/main.module.css";
+import Skills from "./components/skills";
+import Projects from "./components/projects";
+
 
 
 export default function Home() {
@@ -9,9 +11,7 @@ export default function Home() {
        
 
       <Skills/>
-
-
-
+      <Projects/>
 
     </main>
   );
