@@ -29,13 +29,15 @@ const projects = [
     source_code_link: "https://github.com/miusuario/proyecto2",
   },
   {
-    name: "PROYECTO 3",
-    description: "App para consulta del clima en tiempo real.",
+    name: "DynastyShop",
+    description: "E-commerce desarrollado con fines educativos como proyecto final de curso.",
     tags: [
+      { name: "React", color: "text-blue-400" },
+      { name: "Node.js", color: "text-green-500" },
       { name: "JavaScript", color: "text-yellow-400" },
-      { name: "API", color: "text-red-500" },
+      { name: "Firebase", color: "text-red-500" }
     ],
-    image: "/assets/img/proyectox.jpg", // Ruta de imagen corregida
+    image: "/assets/img/dShop.webp", // Ruta de imagen corregida
     source_code_link: "https://github.com/miusuario/proyecto3",
   },
 ];
