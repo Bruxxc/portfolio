@@ -4,7 +4,7 @@ import BallCanvas from './resources/ball';
 import SectionWrapper from "./resources/sectionwrapper";
 import styles from "../styles/skills.module.css";
 import { motion } from "framer-motion";
-import { fadeIn, textVariant} from "../utils/motion";
+import { textVariant} from "../utils/motion";
 
 const skills = [
     {

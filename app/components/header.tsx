@@ -13,9 +13,10 @@ const Header = () => {
                         <span className="text-purple-700">.</span>
                     </h1>
                     
-                    <div className="flex items-center justify-center gap-7">
-                        <img className={styles.header_icon} src="./assets/icons/github_icon.png" alt="github_icon" />
-                        <img className={styles.header_icon} src="./assets/icons/linkedin_icon.png" alt="linkedin_icon" />
+                    <div className={`flex items-center justify-center gap-7`}>
+                    <a className="z-30" href="https://github.com/Bruxxc"><img className={styles.header_icon} src="./assets/icons/github_icon.png" alt="github_icon" /></a>
+                    <a className="z-30" href="https://www.linkedin.com/in/bruno-condenanza-32926b245/"><img className={styles.header_icon} src="./assets/icons/linkedin_icon.png" alt="linkedin_icon" /></a>
+                        
                     </div>
 
                 </div>

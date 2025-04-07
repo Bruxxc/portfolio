@@ -20,3 +20,11 @@
 .projects_main_container{
     display: grid;
 }
+
+.project_card:hover {
+   border:solid #6e11b0 0.2px;
+}
+
+.project_card:hover h3 {
+    color:#6e11b0;
+}
