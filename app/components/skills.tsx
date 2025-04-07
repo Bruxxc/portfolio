@@ -39,14 +39,14 @@ const skills = [
       name: "MongoDB",
       icon: "assets/icons/mongodb.png",
     },
-    {
-      name: "git",
-      icon: "assets/icons/github_icon.png",
-    },
-    {
-      name: "figma",
-      icon: "assets/icons/figma.png",
-    },
+    // {
+    //   name: "git",
+    //   icon: "assets/icons/github_icon.png",
+    // },
+    // {
+    //   name: "figma",
+    //   icon: "assets/icons/figma.png",
+    // },
     {
       name : "python",
       icon: "assets/icons/python.png",
