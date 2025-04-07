@@ -1,11 +1,10 @@
 "use client"
 
-import BallCanvas from './resources/ball';
+import SkillItem from './skillBall';
 import SectionWrapper from "./resources/sectionwrapper";
 import styles from "../styles/skills.module.css";
 import { motion } from "framer-motion";
 import { textVariant} from "../utils/motion";
-import { useInView } from 'react-intersection-observer';
 
 const skills = [
     {
@@ -86,12 +85,8 @@ const Skills = () => {
           <div className="z-30">
             <div className="flex flex-row flex-wrap justify-center gap-10">
               {skills.map((skill) => {
-                const { ref, inView } = useInView({ triggerOnce: true });
-
                 return (
-                  <div className="w-28 h-28" key={skill.name} ref={ref}>
-                    {inView && <BallCanvas icon={skill.icon} />}
-                  </div>
+                  <SkillItem key={skill.name} skill={skill}/>
                 );
               })}
             </div>
